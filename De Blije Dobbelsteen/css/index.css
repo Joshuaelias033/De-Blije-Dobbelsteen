@@ -1,0 +1,74 @@
+.games{
+    margin-top: 3.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.games-1, .games-2{
+    display: flex;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 8px;
+    width: 33%;
+}
+.games-1 img, .games-2 img{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: fill;
+    display: block;
+}
+.games-1:hover, .games-2:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* tekst spel-1 en spel-2 */
+.titelblackjack, .titelboterkaaseiren{
+    color: #9d0208;
+    font-weight: bold;
+}
+.beschrijvingblackjack, .beschrijvingboterkaaseiren{
+    margin-top: 1%;
+}
+.tekstblackjack, .tekstboterkaaseiren{
+    text-align: center;
+    width: 40%;
+}
+.tekst{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 1.5%;
+}
+
+
+/* media querries */
+@media screen and (min-width: 0px) and (max-width: 320px){
+    .games{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .games-2{
+        margin-top: 20px;
+    }
+    .games-1, .games-2{
+        width: 55%;
+        min-height: 200px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px){
+    .games{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .games-2{
+        margin-top: 20px;
+    }
+    .games-1, .games-2{
+        min-height: 200px;
+    }
+}
