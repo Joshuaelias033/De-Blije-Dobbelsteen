@@ -70,5 +70,10 @@
     }
     .games-1, .games-2{
         min-height: 200px;
+        width: 75%;
+    }
+    .teksthangman, .tekstboterkaaseiren{
+        width: 60%;
+        font-size: 15px;
     }
 }
