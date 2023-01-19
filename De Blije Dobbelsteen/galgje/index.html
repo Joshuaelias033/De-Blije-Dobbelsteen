@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Hangman</title>
+</head>
+
+<body>
+    <div class="titel">
+        <p>Welkom bij</p>
+        <h1>Hangman</h1>
+    </div>
+    <div class="flex-pos">
+        <div class="galg">
+            <div class="container">
+                <div class="horizon-line-1-box">
+                    <div class="horizon-line-1"></div>
+                </div>
+                <div class="vertical-line-1-box">
+                    <div class="vertical-line-1"></div>
+                </div>
+                <div class="horizon-line-2-box">
+                    <div class="horizon-line-2"></div>
+                </div>
+                <div class="vertical-line-2-box">
+                    <div class="vertical-line-2"></div>
+                </div>
+                <div class="rope-box">
+                    <div class="rope"></div>
+                </div>
+            </div>
+            <div class="head-box" id="head">
+                <div class="head">
+                    <div class="eye-1"></div>
+                    <div class="eye-2"></div>
+                    <div class="mouth"></div>
+                </div>
+            </div>
+            <div class="body-box" id="body">
+                <div class="body"></div>
+            </div>
+            <div class="arm-1-box" id="arm-left">
+                <div class="arm-1"></div>
+            </div>
+            <div class="arm-2-box" id="arm-right">
+                <div class="arm-2"></div>
+            </div>
+            <div class="leg-1-box" id="leg-left">
+                <div class="leg-1"></div>
+            </div>
+            <div class="leg-2-box" id="leg-right">
+                <div class="leg-2"></div>
+            </div>
+            <div class="menu">
+            <button onclick="Play()" onclick="hideWoord()" id="speel">klik hier om te spelen</button>
+            <br>
+            </div>
+            <div class="pogingen" id="pogingen"><p>6 pogingen over</p></div>
+            <div class="woord" id="woord"><h1></h1></div>
+            <div class="letters" id="letters">
+                <p id="a" onclick="letterClick(this.id)">A</p>
+                <p id="b" onclick="letterClick(this.id)">B</p>
+                <p id="c" onclick="letterClick(this.id)">C</p>
+                <p id="d" onclick="letterClick(this.id)">D</p>
+                <p id="e" onclick="letterClick(this.id)">E</p>
+                <p id="f" onclick="letterClick(this.id)">F</p>
+                <p id="g" onclick="letterClick(this.id)">G</p>
+                <p id="h" onclick="letterClick(this.id)">H</p>
+                <p id="i" onclick="letterClick(this.id)">I</p>
+                <p id="j" onclick="letterClick(this.id)">J</p>
+                <p id="k" onclick="letterClick(this.id)">K</p>
+                <p id="l" onclick="letterClick(this.id)">L</p>
+                <p id="m" onclick="letterClick(this.id)">M</p>
+                <p id="n" onclick="letterClick(this.id)">N</p>
+                <p id="o" onclick="letterClick(this.id)">O</p>
+                <p id="p" onclick="letterClick(this.id)">P</p>
+                <p id="q" onclick="letterClick(this.id)">Q</p>
+                <p id="r" onclick="letterClick(this.id)">R</p>
+                <p id="s" onclick="letterClick(this.id)">S</p>
+                <p id="t" onclick="letterClick(this.id)">T</p>
+                <p id="u" onclick="letterClick(this.id)">U</p>
+                <p id="v" onclick="letterClick(this.id)">V</p>
+                <p id="w" onclick="letterClick(this.id)">W</p>
+                <p id="x" onclick="letterClick(this.id)">X</p>
+                <p id="y" onclick="letterClick(this.id)">Y</p>
+                <p id="z" onclick="letterClick(this.id)">Z</p>
+            </div>
+            <div id="gewonnen"><p>You won!</p></div>
+            <div class="lost"><p id="you-lost">You lost</p></div>
+            <div id="lost-word"></div>
+            <div id="highscore">Win Streak: </div>
+            <script src="script.js"></script>
+</body>
+</html>

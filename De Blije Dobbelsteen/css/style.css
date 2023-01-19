@@ -131,6 +131,10 @@
     .navbar ul{
         display: none;
     }
+    .logo{
+        width: 100%;
+        margin-right: 10%;
+    }
 }
 
 @media screen and (min-width: 720px) and (max-width: 1024px){
