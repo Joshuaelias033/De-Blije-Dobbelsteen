@@ -23,14 +23,14 @@
     cursor: pointer;
 }
 /* tekst spel-1 en spel-2 */
-.titelblackjack, .titelboterkaaseiren{
+.titelhangman, .titelboterkaaseiren{
     color: #9d0208;
     font-weight: bold;
 }
-.beschrijvingblackjack, .beschrijvingboterkaaseiren{
+.beschrijvinghangman, .beschrijvingboterkaaseiren{
     margin-top: 1%;
 }
-.tekstblackjack, .tekstboterkaaseiren{
+.teksthangman, .tekstboterkaaseiren{
     text-align: center;
     width: 40%;
 }

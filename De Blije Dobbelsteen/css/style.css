@@ -64,9 +64,63 @@
     padding: 2% 0%;
     text-align: center;
     margin-top: 6%;
+    position: relative;
 }
+.topnav i{
+    color: #FFF;
+    font-size: 20px;
+    padding: 11px 16px;
+}
+#myLinks {
+    background-color: #76C2AF;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  #myLinks a {
+    color: white;
+    padding: 11px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+  }
+  .topnav a.icon {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+  #myLinks a:hover {
+    background-color: #76C2AF;
+    color: white;
+  }
 
 /* media querries */
+
+@media screen and (min-width: 0px) and (max-width: 720px) {
+    .navbar{
+    padding: 13px 10px;
+
+    }
+    .navbar-links{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width:721px){
+    .topnav{
+        display: none;
+    }
+}
+
+
 @media screen and (min-width: 0px) and (max-width: 320px){
     .navbar ul{
         display: none;

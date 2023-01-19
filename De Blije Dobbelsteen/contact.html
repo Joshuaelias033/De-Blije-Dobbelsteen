@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <title>De Blije Dobbelsteen</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="topnav">
+        <div id="myLinks">
+          <a href="#mijn-portfolio" id="blink-portfolioMobile">Mijn Portfolio</a>
+          <a href="#over-mij" id="blink-overmijMobile">Over Mij</a>
+          <a href="#projecten" id="blink-projectenMobile">Projecten</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="hbmenu" class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div class="banner">
+        <div class="titel">De Blije Dobbelsteen</div>
+        <div class="logo"><img src="img/logo.png"></div>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="spelregels.html">Spelregels</a>
+            <a href="highscores.html">High Scores</a>
+            <a href="geschiedenis.html">Geschiedenis</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </nav>
+    <h2>De Blije Dobbelsteen</h2>
+
+    <fieldset>
+
+        <legend>Contact</legend>
+
+        <label for="name" id="minilabel">Naam</label>
+
+        <input ty pe="text" id="name" name="name" required>
+
+        <label for="email" id="minilabel">E-mail</label>
+
+        <input type="text" id="email" name="email" required>
+
+        <label for="tel">Telefoon nummer</label>
+
+        <input type="text" id="tel" name="tel" required>
+
+        <input type="submit" id="submit" name="submit" value="Verzenden">
+
+    </fieldset>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

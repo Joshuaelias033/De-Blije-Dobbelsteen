@@ -1,0 +1,52 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color:#9d0208;
+}
+fieldset {
+    width: 40%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 0px auto;
+    transition: .3s;
+}
+fieldset input {
+    border-radius: 2px;
+    border: .5px solid black;
+    height: 30px;
+    font-size: 15px;
+}
+fieldset label {
+    padding-right: 40px;
+    font-size: 1.1em;
+}
+#minilabel {
+    padding-right: 115px;
+}
+#submit {
+    margin-top: 20px;
+    background-color: #76C2AF;
+    color: white;
+    border: 0px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+#submit:hover {
+    cursor: pointer;
+    background-color: #6ba899;
+    padding: 6.5px 16.5px;
+}
+@media only screen and (max-width: 600px) {
+    fieldset {
+        width: 60%;
+        transition: all .3s;
+    }
+}

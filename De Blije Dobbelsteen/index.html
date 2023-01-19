@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div class="topnav">
+        <div id="myLinks">
+          <a href="#mijn-portfolio" id="blink-portfolioMobile">Mijn Portfolio</a>
+          <a href="#over-mij" id="blink-overmijMobile">Over Mij</a>
+          <a href="#projecten" id="blink-projectenMobile">Projecten</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i id="hbmenu" class="fa fa-bars"></i>
+        </a>
+      </div>
     <div class="banner">
         <div class="titel">De Blije Dobbelsteen</div>
         <div class="logo"><img src="img/logo.png"></div>
@@ -24,13 +35,13 @@
         </ul>
     </nav>
     <div class="games">
-        <div class="games-1"><a href="#"><img title="Klik hier om te spelen!" src="img/black-jack.jpg"></a></div>
+        <div class="games-1"><a href="#"><img title="Klik hier om te spelen!" src="img/hangman.jpg"></a></div>
         <div class="games-2"><a href="#"><img title="Klik hier om te spelen!" src="img/boter-kaas-en-eiren.png"></a></div>
     </div>
     <div class="tekst">
-        <div class="tekstblackjack">
-            <div class="titelblackjack">Black Jack</div>
-            <div class="beschrijvingblackjack">Black Jack is een kaartspel waarbij je een 21 moet hebben om te winnen van de dealer.</div>
+        <div class="teksthangman">
+            <div class="titelhangman">Hangman</div>
+            <div class="beschrijvinghangman">Hangman is een spel waarbij je het land moet raden voordat het poppetje hangt.</div>
         </div>
         <div class="tekstboterkaaseiren">
             <div class="titelboterkaaseiren">Boter, Kaas en Eiren</div>
@@ -38,9 +49,8 @@
         </div>
     </div>
     <footer>
-        <div class="footer">Copyright © 2022. Alle Rechten Voorbehouden.</div>
-        <p>skhadjfkasdfhlasdkjfhasdlkdfhkasdj</p>
+        <div class="footer">Copyright © 2023. Alle Rechten Voorbehouden.</div>
     </footer>
-    
+    <script src="js/hamburger.js"></script>
 </body>
 </html>
