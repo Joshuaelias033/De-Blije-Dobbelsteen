@@ -175,9 +175,6 @@ function Play() {
 	document.getElementById("pogingen").style.display = "flex";
 	document.getElementById("pogingen").innerHTML = "6 pogingen over";
 	highscore.style.display = "flex";
-	if (highscoreText.innerHTML === "Winstreak 0; hs") {
-		highscoreText.innerHTML = "Highscore: 0";
-	}
 	// Zet highscore op de pagina wanneer het spel start
 	leesCookie();
 }
@@ -262,6 +259,7 @@ function leesCookie(){
 	return cookieArray[1];
 }
 document.cookie = "hs=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+document.cookie = "hs-moeilijk=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 
 
