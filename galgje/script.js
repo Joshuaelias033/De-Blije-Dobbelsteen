@@ -174,7 +174,11 @@ function Play() {
 	document.getElementById("woord").style.display = "flex";
 	document.getElementById("pogingen").style.display = "flex";
 	document.getElementById("pogingen").innerHTML = "6 pogingen over";
+	if (highscoreText.innerHTML === (undefined) ) {
+		console.log("test");
+	}
 	highscore.style.display = "flex";
+	
 	// Zet highscore op de pagina wanneer het spel start
 	leesCookie();
 }
@@ -207,7 +211,7 @@ function pogingen() {
 		lostWoord.style.display = "flex";
 		document.getElementById("lost-word").innerHTML = "the word was: " + randomLand;
 		document.getElementById("pogingen").innerHTML = "0 pogingen over";
-		document.cookie = "highscore=0";
+		document.cookie = "Winstreak=0";
 		setTimeout(function () {
 			window.location.reload();
 		}, 3000);
@@ -258,8 +262,11 @@ function leesCookie(){
 	highscoreText.innerHTML = "Winstreak " + cookieArray[1];
 	return cookieArray[1];
 }
+
 document.cookie = "hs=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 document.cookie = "hs-moeilijk=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+
 
 
 
