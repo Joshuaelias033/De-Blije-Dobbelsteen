@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --wit: #fff;
+    --zwart: #363537;
+    --groen: #3dad6a;
+    --rood: #cf5f64;
+    --achtergrond: #76c2af;
+    --highlight: #2d414b66;
+    --button_hover: rgb(67, 66, 66);
+    --box_hover: #2d414b67;
+}
+body {
+    background-color: var(--achtergrond);
+    font-family: arial;
+    
+}
+#music{
+    position: absolute;
+    padding: 10px 15px;
+    margin-left: 89%;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: var(--zwart);
+}
+#music:hover{
+    background-color: var(--button_hover);
+    transition: 0.3s;
+}
+h1 {
+    color: var(--wit);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+#highscore{
+    position: absolute;
+    color: var(--wit);
+    font-size: 1.1rem;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#highscore-text{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+#highscore-x{
+    margin-top: 7%;
+}
+#highscore-o{
+    margin-top: 1.7%;
+}
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#spelbord {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    user-select: none;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--wit);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    cursor: pointer;
+}
+.box:nth-child(4n) {
+    border-right: none;
+}
+.box:nth-child(12) ~ .box {
+    border-bottom: none;
+} 
+button {
+    border: 0;
+    margin-top: 13px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--zwart);
+    color: var(--wit);
+    font-size: 18px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--button_hover);
+    transition: 0.3s;
+}
+.box:hover{
+    background-color: var(--box_hover);
+    transition: 0.2s;
+}
+
+/* Kleinere telefoons */
+@media screen and (min-width: 0px) and (max-width: 320px){
+    h1{
+        font-size: 26px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #music{
+        padding: 8px 8px;
+        margin-left: 59%;
+        font-size: 12px;
+    }
+    .container {
+        padding: 40px;
+        height: 98vh;
+    }
+    button {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+}
